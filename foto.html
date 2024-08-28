@@ -4,15 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photography</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
+        /* Reset default margin and padding */
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+
         /* Navbar Styling */
+        header {
+            margin: 0;
+            padding: 0;
+        }
+
         nav {
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            background-color: #333;
+            background-color: #2980b9;
             padding: 10px 20px;
+            width: 100%; /* Memastikan navbar mengisi seluruh lebar layar */
+            box-sizing: border-box; /* Memastikan padding dan border termasuk dalam lebar total */
         }
 
         nav a {
@@ -63,7 +75,7 @@
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #333;
+            background-color: #2980b9;
             color: #fff;
             margin-top: 50px;
         }
