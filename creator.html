@@ -6,10 +6,68 @@
     <title>Fernanda Sugiwa Darmawan | Creator</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Link to Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <style>
-        /* Style for project items */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #007BFF; /* Warna background navbar */
+            color: white;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .logo h1 {
+            margin: 0;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .nav-links li {
+            position: relative;
+        }
+        .nav-links li a {
+            color: white; /* Warna teks navbar */
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #34495e; /* Warna background dropdown */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+            z-index: 1000;
+        }
+        .nav-links li:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown-menu li {
+            list-style: none;
+        }
+        .dropdown-menu li a {
+            color: #ecf0f1; /* Warna teks dropdown */
+            padding: 10px 20px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+        .dropdown-menu li a:hover {
+            background-color: #2980b9; /* Warna background saat hover dropdown */
+        }
         .project-item {
             margin-bottom: 40px;
         }
@@ -61,51 +119,16 @@
         .swiper-button-next, .swiper-button-prev {
             color: #2980b9;
         }
-
-        /* Style for the dropdown menu */
-        .nav-links {
-            position: relative;
-            display: flex;
-            gap: 20px;
-        }
-
-        .nav-links li {
-            position: relative;
-            list-style: none;
-        }
-
-        .nav-links li a {
-            text-decoration: none;
+        footer {
+            background-color: #007BFF; /* Warna background footer */
             color: white;
-            padding: 10px 15px;
-            display: block;
+            text-align: center;
+            padding: 10px;
         }
-
-        .nav-links li:hover .dropdown-menu {
-            display: block;
-        }
-
-        .dropdown-menu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #34495e;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-            z-index: 1000;
-            overflow: hidden;
-        }
-
-        .dropdown-menu li a {
-            color: #ecf0f1;
-            padding: 10px 20px;
-            display: block;
-            transition: background-color 0.3s ease;
-        }
-
-        .dropdown-menu li a:hover {
-            background-color: #2980b9;
+        .social-icons a {
+            color: white;
+            margin: 0 5px;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -118,7 +141,7 @@
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li>
-                    <a href="creator.html">Creator</a>
+                    <a href="#">Creator</a>
                     <ul class="dropdown-menu">
                         <li><a href="video.html">Videography</a></li>
                         <li><a href="foto.html">Photography</a></li>
@@ -144,27 +167,24 @@
                 <h3>Social Media Specialist</h3>
                 <p>Social media processor.</p>
                 <a href="#tiktok-content" class="btn">View Medsos Specialist</a>
-                <!-- TikTok Content Gallery -->
                 <div class="image-gallery">
-                    <img src="Medsosspesialist.png" alt="Videography Post 1" style="width: 773px; height: 333px; object-fit: cover;">
+                    <img src="Medsosspesialist.png" alt="Videography Post 1">
                 </div>
             </div>
             <div class="project-item">
                 <h3>Videography</h3>
                 <p>Video Content Creation.</p>
                 <a href="#videography-content" class="btn">View Videography Content</a>
-                <!-- Videography Content Gallery -->
                 <div class="image-gallery">
-                    <img src="Videography.png" alt="Videography Post 1" style="width: 773px; height: 333px; object-fit: cover;">
+                    <img src="Videography.png" alt="Videography Post 1">
                 </div>
             </div>
             <div class="project-item">
                 <h3>Design & Photo</h3>
                 <p>Collaborated with a tech.</p>
                 <a href="#design-content" class="btn">View Design & Photo</a>
-                <!-- TikTok Content Gallery -->
                 <div class="image-gallery">
-                    <img src="Desain.png" alt="Videography Post 1" style="width: 773px; height: 333px; object-fit: cover;">
+                    <img src="Desain.png" alt="Design Post 1">
                 </div>
             </div>
         </div>
@@ -174,69 +194,55 @@
         <h2 style="text-align: center; font-size: 2.5rem; color: #2c3e50; margin-bottom: 1.5rem;">Social Media Specialist</h2>
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <!-- Slide 1 -->
                 <div class="swiper-slide">
-                    <img src="rnd coba.png" alt="Analist Content" style="width: 1010px; height: 591px; object-fit: cover;">
+                    <img src="rnd coba.png" alt="Analist Content">
                 </div>
-                <!-- Slide 2 -->
                 <div class="swiper-slide">
                     <img src="Hasil.png" alt="TikTok Content 2">
                 </div>
-            <!-- Add Pagination -->
+            </div>
             <div class="swiper-pagination"></div>
-            <!-- Add Navigation -->
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
     </section>
 
-    <!-- VideoGraphy Section -->
     <section id="videography-content" class="videography-content">
-            <h2 style="text-align: center; font-size: 2.5rem; color: #2c3e50; margin-bottom: 1.5rem;">
-                Videography
-            </h2>
-        </a>
+        <h2 style="text-align: center; font-size: 2.5rem; color: #2c3e50; margin-bottom: 1.5rem;">
+            Videography
+        </h2>
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <!-- Slide 1 -->
                 <div class="swiper-slide">
                     <img src="RndVideo.png" alt="Videography Content 1">
                 </div>
-                <!-- Slide 2 -->
                 <div class="swiper-slide">
                     <img src="Ediprimerpro.png" alt="Videography Content 2">
                 </div>
-                <!-- Slide 3 -->
                 <div class="swiper-slide">
                     <img src="Editcapcut.png" alt="Videography Content 3">
                 </div>
             </div>
-            <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
-            <!-- Add Navigation -->
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
     </section>
+
     <section id="design-content" class="design-content">
-            <h2 style="text-align: center; font-size: 2.5rem; color: #2c3e50; margin-bottom: 1.5rem;">
+        <h2 style="text-align: center; font-size: 2.5rem; color: #2c3e50; margin-bottom: 1.5rem;">
             Design & Photo
-            </h2>
-        </a>
+        </h2>
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <!-- Slide 1 -->
                 <div class="swiper-slide">
-                    <img src="Design.png" alt="Analist Content" style="width: 1010px; height: 591px; object-fit: cover;">
+                    <img src="Design.png" alt="Design Content 1">
                 </div>
-                <!-- Slide 2 -->
                 <div class="swiper-slide">
-                    <img src="hasildesain.png" alt="TikTok Content 2">
+                    <img src="hasildesain.png" alt="Design Content 2">
                 </div>
             </div>
-            <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
-            <!-- Add Navigation -->
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
@@ -251,7 +257,6 @@
         </div>
     </footer>
 
-    <!-- Include Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
